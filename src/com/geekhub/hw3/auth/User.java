@@ -1,8 +1,8 @@
-package com.geekhub.hw3.auth;
+/*package com.geekhub.hw3.auth;
 
 /**
  * Immutable User representation (all fields are final)
- */
+ *
 public class User {
     private final String login;
     private final String password;
@@ -19,4 +19,4 @@ public class User {
     public String getPassword() {
         return password;
     }
-}
+}*/

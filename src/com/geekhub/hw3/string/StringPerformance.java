@@ -1,4 +1,4 @@
-package com.geekhub.hw3.string;
+/*package com.geekhub.hw3.string;
 
 public class StringPerformance {
 
@@ -26,4 +26,4 @@ public class StringPerformance {
     private static void testStringBufferPerformance() {
         //TODO: Implement similar to testStringPerformance
     }
-}
+}*/
