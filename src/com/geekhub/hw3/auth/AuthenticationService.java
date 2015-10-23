@@ -7,14 +7,16 @@ public class AuthenticationService {
 
         try {
             User blah = authService.auth("blah", "blah");
+            System.out.println("Hello, " + blah.getLogin());
         } catch (AuthException e) {
-            //TODO: react
+            System.out.println(e.getMessage());
         }
 
         try {
             User batman = authService.auth("Batman", "catwoman");
+            System.out.println("Hello, " + batman.getLogin());
         } catch (AuthException e) {
-            //TODO: react
+            System.out.println(e.getMessage());
         }
     }
 
@@ -24,7 +26,46 @@ public class AuthenticationService {
     };
 
     private User auth(String login, String password) throws AuthException {
-        //TODO: Implement me
-        return null;
+        if (login.isEmpty() || password.isEmpty()) {
+            throw new WrongCredentialsException();
+        }
+
+        for (User user : users) {
+            if (user.getLogin().equals(login)) {
+                if (user.getPassword().equals(password)) {
+                    return user;
+                }
+                throw new WrongPasswordException();
+            }
+        }
+        throw new UserNotFoundException();
+    }
+
+    private abstract class AuthException extends Exception {
+
+        public AuthException(String message) {
+            super(message);
+        }
+    }
+
+    public class UserNotFoundException extends AuthException {
+
+        public UserNotFoundException() {
+            super("User not found");
+        }
+    }
+
+    public class WrongCredentialsException extends AuthException {
+
+        public WrongCredentialsException() {
+            super("Wrong credentials");
+        }
+    }
+
+    public class WrongPasswordException extends AuthException {
+
+        public WrongPasswordException() {
+            super("Wrong password");
+        }
     }
 }

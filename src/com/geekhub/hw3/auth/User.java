@@ -3,7 +3,7 @@ package com.geekhub.hw3.auth;
 /**
  * Immutable User representation (all fields are final)
  */
-public class User {
+public class User implements Comparable {
     private final String login;
     private final String password;
 
@@ -18,5 +18,15 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return login.compareTo(((User) o).getLogin());
+    }
+
+    @Override
+    public String toString() {
+        return login;
     }
 }
