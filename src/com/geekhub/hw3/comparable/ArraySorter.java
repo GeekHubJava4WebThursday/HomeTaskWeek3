@@ -18,7 +18,10 @@ public class ArraySorter {
      * @return sorted array
      */
     public static Comparable[] sort(Comparable[] elements) {
-        //TODO: Implement without using Arrays.sort method
+        Arrays.sort(elements);
         return elements;
     }
+
+
+
 }
