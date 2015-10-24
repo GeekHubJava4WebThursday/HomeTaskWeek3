@@ -1,9 +1,9 @@
 package com.geekhub.hw3.auth;
 
-import com.geekhub.hw3.auth.exptions.AuthException;
-import com.geekhub.hw3.auth.exptions.UserNotFoundException;
-import com.geekhub.hw3.auth.exptions.WrongCredentialsException;
-import com.geekhub.hw3.auth.exptions.WrongPasswordException;
+import com.geekhub.hw3.auth.exception.AuthException;
+import com.geekhub.hw3.auth.exception.UserNotFoundException;
+import com.geekhub.hw3.auth.exception.WrongCredentialsException;
+import com.geekhub.hw3.auth.exception.WrongPasswordException;
 
 public class AuthenticationService {
 
