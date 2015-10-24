@@ -13,17 +13,39 @@ public class StringPerformance {
     private static void testStringPerformance() {
         long beginTime = System.currentTimeMillis();
 
-        //TODO: Do CONCAT_CYCLES times of string concatenation
+        String someString = "";
+
+        for(int i = 0; i <= CONCAT_CYCLES; i++){
+            someString = someString + "i=" + i;
+        }
 
         long timePastMs = System.currentTimeMillis() - beginTime;
-        System.out.println("String concatenation took " + timePastMs + "ms");
+        System.out.println("Test String: string concatenation took " + timePastMs + "ms");
     }
 
     private static void testStringBuilderPerformance() {
-        //TODO: Implement similar to testStringPerformance
+        long beginTime = System.currentTimeMillis();
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for(int i = 0; i <= CONCAT_CYCLES; i++){
+            stringBuilder.append("i = " + i);
+        }
+
+        long timePastMs = System.currentTimeMillis() - beginTime;
+        System.out.println("Test StringBuilder: string concatenation took " + timePastMs + "ms");
     }
 
     private static void testStringBufferPerformance() {
-        //TODO: Implement similar to testStringPerformance
+        long beginTime = System.currentTimeMillis();
+
+        StringBuffer stringBuffer = new StringBuffer();
+
+        for(int i = 0; i <= CONCAT_CYCLES; i++){
+            stringBuffer.append("i = " + i);
+        }
+
+        long timePastMs = System.currentTimeMillis() - beginTime;
+        System.out.println("Test StringBuffer string concatenation took " + timePastMs + "ms");
     }
 }
