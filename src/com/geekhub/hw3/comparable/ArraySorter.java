@@ -20,22 +20,21 @@ public class ArraySorter {
      * @return sorted array
      */
     public static Comparable[] sort(Comparable[] elements) {
-        /*
-        * Traditional insertion sort
-        * Good for small arrays
-        */
 
-        for (int i = 0, j = i; i < elements.length - 1; j = ++i) {
-            Comparable ai = elements[i + 1];
-            while (ai.compareTo(elements[j]) < 0) {
-                elements[j + 1] = elements[j];
+        Comparable[] arrayCopy = Arrays.copyOf(elements, elements.length);
+
+        // Traditional insertion sort. Good for small arrays
+        for (int i = 0, j = i; i < arrayCopy.length - 1; j = ++i) {
+            Comparable ai = arrayCopy[i + 1];
+            while (ai.compareTo(arrayCopy[j]) < 0) {
+                arrayCopy[j + 1] = arrayCopy[j];
                 if (j-- == 0) {
                     break;
                 }
             }
-            elements[j + 1] = ai;
+            arrayCopy[j + 1] = ai;
         }
 
-        return elements;
+        return arrayCopy;
     }
 }
