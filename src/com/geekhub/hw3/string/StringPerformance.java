@@ -40,7 +40,7 @@ public class StringPerformance {
         long beginTime = System.currentTimeMillis();
 
         for(int i = 0; i < CONCAT_CYCLES; i++) {
-            stringBuffer.append(stringBuffer);
+            stringBuffer.append(CONCAT_TEXT);
         }
         long timePastMs = System.currentTimeMillis() - beginTime;
         System.out.println("StringBuffer took " + timePastMs + "ms");
