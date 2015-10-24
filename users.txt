@@ -1,0 +1,7 @@
+# Surname     Name        Login         password MD5
+
+  Test        User        test          098f6bcd4621d373cade4e832627b4f6
+  Brown       Bill        Batman        e99d7ed5580193f36a51f597bc2c0210
+  Sidorenko   Ivan        IvAn          a2ca356e1a99f9214b83af5d6ebd4797
+  Admin       Admin       Geekhub       e3afed0947b08059d0fada10f400c1e5
+  Voldan      Smith       SuperSmith    2ed9a6e52addb5cece7df0ccb6a917c4
