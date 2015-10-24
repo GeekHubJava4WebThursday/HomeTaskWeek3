@@ -3,6 +3,7 @@ package com.geekhub.hw3.string;
 public class StringPerformance {
 
     private static final int CONCAT_CYCLES = 1000000;
+    private static final String CONCAT_TEXT = "text";
 
     public static void main(String[] args) {
         testStringPerformance();
@@ -11,19 +12,37 @@ public class StringPerformance {
     }
 
     private static void testStringPerformance() {
+        String result = "";
         long beginTime = System.currentTimeMillis();
 
-        //TODO: Do CONCAT_CYCLES times of string concatenation
+        for(int i = 0; i < CONCAT_CYCLES; i++) {
+            result = result.concat(CONCAT_TEXT);
+        }
 
         long timePastMs = System.currentTimeMillis() - beginTime;
         System.out.println("String concatenation took " + timePastMs + "ms");
     }
 
     private static void testStringBuilderPerformance() {
-        //TODO: Implement similar to testStringPerformance
+        StringBuilder stringBuilder = new StringBuilder();
+        long beginTime = System.currentTimeMillis();
+
+        for(int i = 0; i < CONCAT_CYCLES; i++) {
+            stringBuilder.append(CONCAT_TEXT);
+        }
+
+        long timePastMs = System.currentTimeMillis() - beginTime;
+        System.out.println("StringBuilder took " + timePastMs + "ms");
     }
 
     private static void testStringBufferPerformance() {
-        //TODO: Implement similar to testStringPerformance
+        StringBuffer stringBuffer = new StringBuffer();
+        long beginTime = System.currentTimeMillis();
+
+        for(int i = 0; i < CONCAT_CYCLES; i++) {
+            stringBuffer.append(stringBuffer);
+        }
+        long timePastMs = System.currentTimeMillis() - beginTime;
+        System.out.println("StringBuffer took " + timePastMs + "ms");
     }
 }
