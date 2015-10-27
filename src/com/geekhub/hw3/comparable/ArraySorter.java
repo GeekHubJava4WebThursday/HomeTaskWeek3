@@ -15,10 +15,22 @@ public class ArraySorter {
 
     /**
      * Sorts array of the comparable elements
+     * Sorting by bubble sort algorithm
      * @return sorted array
      */
     public static Comparable[] sort(Comparable[] elements) {
-        //TODO: Implement without using Arrays.sort method
-        return elements;
+        Comparable[] elemCopy = elements;
+        Comparable elemBuffer = null;
+        //
+        for(int i=0; i <elemCopy.length-1; i++) {
+            for(int j=i+1; j < elemCopy.length; j++) {
+                if(elemCopy[i].compareTo(elemCopy[j])>0){
+                    elemBuffer = elemCopy[i];
+                    elemCopy[i] = elemCopy[j];
+                    elemCopy[j] = elemBuffer;
+                }
+            }
+        }
+        return elemCopy;
     }
 }
