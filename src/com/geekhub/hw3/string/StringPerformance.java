@@ -14,6 +14,11 @@ public class StringPerformance {
         long beginTime = System.currentTimeMillis();
 
         //TODO: Do CONCAT_CYCLES times of string concatenation
+        String test = "test text";
+        for (int i = 0; i < CONCAT_CYCLES; i++)
+        {
+            test += test;
+        }
 
         long timePastMs = System.currentTimeMillis() - beginTime;
         System.out.println("String concatenation took " + timePastMs + "ms");
