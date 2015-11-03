@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dec69ea-0924-4d42-bf44-89933cdc47a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/AuthException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/UserNotFoundException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/WrongCredentialsException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/WrongPasswrodException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/hw3/comparable/ArraySorter.java" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/comparable/ArraySorter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/AuthenticationService.java" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/AuthenticationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomeTaskWeek3.iml" afterPath="$PROJECT_DIR$/HomeTaskWeek3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/hw3/string/StringPerformance.java" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/string/StringPerformance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/User.java" afterPath="$PROJECT_DIR$/src/com/geekhub/hw3/auth/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HomeTaskWeek3.iws" />
@@ -610,12 +596,17 @@
       <workItem from="1446111982065" duration="3849000" />
       <workItem from="1446117035236" duration="6022000" />
       <workItem from="1446456162519" duration="11401000" />
-      <workItem from="1446542245309" duration="2816000" />
+      <workItem from="1446542245309" duration="2896000" />
     </task>
+    <task id="LOCAL-00001" summary="Homework is done.">
+      <created>1446551913447</created>
+      <updated>1446551913447</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24088000" />
+    <option name="totallyTimeSpent" value="24168000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -685,7 +676,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Homework is done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework is done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
